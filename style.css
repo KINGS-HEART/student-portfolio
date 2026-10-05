@@ -1,0 +1,87 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(227, 137, 19);
+  margin: 0;
+}
+
+
+/* =========================
+ NAVIGATION
+========================= */
+
+.navigate {
+  background-color: #222;
+  display: flex;
+  gap: 20px;
+  padding: 15px 20px;
+  justify-content: center;
+}
+
+.navigate a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navigate a:hover {
+  color: #38bdf8;
+}
+
+
+/* =========================
+ HEADINGS
+========================= */
+
+h1 {
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  color: blue;
+}
+
+
+/* =========================
+ PARAGRAPHS
+========================= */
+
+p {
+  color: rgb(20, 19, 19);
+  font-size: 18px;
+}
+
+
+/* =========================
+ CUSTOM CLASSES
+========================= */
+
+.me {
+  color: green;
+  font-size: 30px;
+}
+
+.skills-title {
+  color: green;
+  font-size: 30px;
+}
+
+
+/* =========================
+ SKILLS SECTION
+========================= */
+
+#skills {
+  background-image: url("https://www.shutterstock.com/image-photo/view-modern-city-location-pointers-600w-1981318931.jpg");
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+}
