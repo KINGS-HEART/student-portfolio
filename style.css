@@ -14,7 +14,7 @@ body {
 ========================= */
 
 .navigate {
-  background-color: #222;
+  background-color: rgb(175, 12, 12);
   display: flex;
   gap: 20px;
   padding: 15px 20px;
