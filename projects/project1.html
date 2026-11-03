@@ -6,65 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Expense Tracker | Project</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
     <header>
-
-        <h1>Expense Tracker</h1>
-
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../about.html">About</a>
-            <a href="../projects.html">Projects</a>
-            <a href="../contact.html">Contact</a>
-            <a href="../media.html">Media</a>
-            <a href="../sitemap.html">Site Map</a>
-        </nav>
-
+        <div class="header-container">
+            <a href="../index.html" class="brand">Kingsley<span>.dev</span></a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../projects.html" class="active">Projects</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../media.html">Media</a>
+                <a href="../sitemap.html">Site Map</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="page-container">
 
-        <article>
+        <section class="page-header">
+            <span class="badge">Financial Utility</span>
+            <h1>Expense Tracker</h1>
+            <p class="subtitle">Personal expense monitoring and financial accounting web tool.</p>
+        </section>
 
+        <article class="card">
             <h2>About the Project</h2>
-
             <p>
                 The Expense Tracker is a web application designed
-                to help users record and monitor their expenses.
+                to help users record, categorize, and monitor their day-to-day expenses.
             </p>
 
             <h2>Purpose</h2>
-
             <p>
-                The purpose of the project is to make it easier
-                for users to keep track of their spending.
+                The purpose of the project is to make it easier for users to keep track
+                of their personal spending habits, monitor cash flow, and maintain financial discipline.
             </p>
 
-            <h2>Technologies</h2>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+            <h2>Key Features</h2>
+            <ul class="styled-list">
+                <li>Simple input form for entering amount, category, and date of transactions.</li>
+                <li>Real-time running balance and itemized list of recent expenditures.</li>
+                <li>Delete and edit capability for fast expense corrections.</li>
+                <li>Visual expense categories for quick at-a-glance financial insights.</li>
             </ul>
 
+            <h2>Technologies Used</h2>
+            <div class="tech-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+            </div>
         </article>
 
-        <p>
-            <a href="../projects.html">
-                &larr; Back to Projects
-            </a>
-        </p>
-        <a href="#skills">Go to Skills</a>
+        <div class="nav-back">
+            <a href="../projects.html" class="btn btn-outline">&larr; Back to Projects</a>
+        </div>
+
     </main>
 
     <footer>
-
-        <p>&copy; 2026 Kingsley. All rights reserved.</p>
-
+        <div class="footer-container">
+            <p>&copy; 2026 Kingsley. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="../sitemap.html">Site Map</a>
+                <a href="../contact.html">Get in Touch</a>
+            </div>
+        </div>
     </footer>
 
 </body>

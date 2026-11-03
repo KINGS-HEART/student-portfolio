@@ -6,51 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Projects | Kingsley</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-
-        <!-- <h1>My Projects</h1> -->
-
-        <nav>
-            <a href="index.html">Home</a>
-            <!-- <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a href="media.html">Media</a>
-            <a href="sitemap.html">Site Map</a> -->
-        </nav>
-
+        <div class="header-container">
+            <a href="index.html" class="brand">Kingsley<span>.dev</span></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="media.html">Media</a>
+                <a href="sitemap.html">Site Map</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- <main>
+    <main class="page-container">
+
+        <section class="page-header">
+            <span class="badge">Featured Work & Credentials</span>
+            <h1>My Projects & Certifications</h1>
+            <p class="subtitle">
+                Below are some of the projects I have worked on during my frontend development journey, alongside my verified certifications.
+            </p>
+        </section>
 
         <section>
+            <h2 class="section-title">Portfolio Projects</h2>
+            <div class="project-grid">
+                <article class="card project-card">
+                    <div class="project-tag">JavaScript Application</div>
+                    <h3>Expense Tracker</h3>
+                    <p>
+                        A web application designed to help users record and monitor their everyday expenses, compute totals, and organize personal finances.
+                    </p>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="projects/project1.html" class="btn btn-primary">View Project Details &rarr;</a>
+                    </div>
+                </article>
 
-            <h2>My Portfolio Projects</h2>
+                <article class="card project-card">
+                    <div class="project-tag">Productivity Tool</div>
+                    <h3>To-Do App</h3>
+                    <p>
+                        A task management application designed to help users organize daily routines, track tasks, and check off accomplishments with an intuitive interface.
+                    </p>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="projects/project2.html" class="btn btn-primary">View Project Details &rarr;</a>
+                    </div>
+                </article>
 
-            <p>
-                Below are some of the projects I have worked on
-                during my frontend development journey.
-            </p>
+                <article class="card project-card">
+                    <div class="project-tag">E-Commerce Platform</div>
+                    <h3>Wine E-Commerce App</h3>
+                    <p>
+                        A modern digital storefront featuring catalog browsing, product filtering, responsive shopping cart management, and seamless checkout workflow.
+                    </p>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="projects/project3.html" class="btn btn-primary">View Project Details &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
+        <section class="certifications-section">
+            <h2 class="section-title">Certifications & Credentials</h2>
+            <div class="cert-grid">
+                <div class="card cert-card">
+                    <div class="cert-badge">AltSchool Africa</div>
+                    <h3>Diploma / Certificate from ALT School</h3>
+                    <p>Verification of frontend development program coursework, web technologies, and software engineering foundations.</p>
+                    <a href="images/Certificate/ALT school CERT.jpeg" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        View Certificate &rarr;
+                    </a>
+                </div>
+
+                <div class="card cert-card">
+                    <div class="cert-badge">SoloLearn</div>
+                    <h3>Certificate from SoloLearn - HTML</h3>
+                    <p>Comprehensive fundamentals of modern HTML markup, document structure, semantic tags, and web standards.</p>
+                    <a href="images/Certificate/sololearn-html.jpeg" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        View Certificate &rarr;
+                    </a>
+                </div>
+
+                <div class="card cert-card">
+                    <div class="cert-badge">JavaScript Certification</div>
+                    <h3>JavaScript Fundamentals & Practice</h3>
+                    <p>Core programming in modern JavaScript, DOM manipulation, asynchronous patterns, and web application logic.</p>
+                    <a href="images/Certificate/JavaScript cert.png" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        View Certificate &rarr;
+                    </a>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <a href="./projects/project1.html">project1</a><br> <br>
-    <a href="./projects/project2.html">project2</a><br><br>
-    <a href="./projects/project3.html">project3</a> <br> <br> -->
-    <a href="./images/Certificate/ALT school CERT.jpeg">My Certificate from ALT school</a> <br> <br>
-    <a href="./images/Certificate/sololearn-html.jpeg">My Certificate from sololearn-html</a> <br> <br>
-    <a href="./images/Certificate/JavaScript cert.png">JavaScript Certificate</a>
-
     <footer>
-
-        <p>&copy; 2026 Kingsley. All rights reserved.</p>
-
+        <div class="footer-container">
+            <p>&copy; 2026 Kingsley. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="sitemap.html">Site Map</a>
+                <a href="contact.html">Get in Touch</a>
+            </div>
+        </div>
     </footer>
 
 </body>

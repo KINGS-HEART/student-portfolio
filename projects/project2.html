@@ -6,65 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>To-Do App | Project</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
     <header>
-
-        <h1>To-Do App</h1>
-
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../about.html">About</a>
-            <a href="../projects.html">Projects</a>
-            <a href="../contact.html">Contact</a>
-            <a href="../media.html">Media</a>
-            <a href="../sitemap.html">Site Map</a>
-        </nav>
-
+        <div class="header-container">
+            <a href="../index.html" class="brand">Kingsley<span>.dev</span></a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../projects.html" class="active">Projects</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../media.html">Media</a>
+                <a href="../sitemap.html">Site Map</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="page-container">
 
-        <article>
+        <section class="page-header">
+            <span class="badge">Productivity Tool</span>
+            <h1>To-Do App</h1>
+            <p class="subtitle">Streamlined task management and daily workflow organizer.</p>
+        </section>
 
+        <article class="card">
             <h2>About the Project</h2>
-
             <p>
-                The To-Do App is a task management application
-                designed to help users organize their daily tasks.
+                The To-Do App is a task management application designed
+                to help users organize their daily schedules, manage tasks, and boost productivity.
             </p>
 
             <h2>Purpose</h2>
-
             <p>
-                The project provides a simple way to create,
-                manage and complete tasks.
+                The project provides a clear, simple way to create, manage, prioritize,
+                and complete tasks without unnecessary clutter or distraction.
             </p>
 
-            <h2>Technologies</h2>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+            <h2>Key Features</h2>
+            <ul class="styled-list">
+                <li>Instant task creation with intuitive keyboard shortcuts.</li>
+                <li>Mark tasks as completed with strikethrough visual indicators.</li>
+                <li>Filters for Active, Completed, and All tasks.</li>
+                <li>Persistent task storage using browser LocalStorage.</li>
             </ul>
 
+            <h2>Technologies Used</h2>
+            <div class="tech-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+            </div>
         </article>
 
-        <p>
-            <a href="../projects.html">
-                &larr; Back to Projects
-            </a>
-        </p>
+        <div class="nav-back">
+            <a href="../projects.html" class="btn btn-outline">&larr; Back to Projects</a>
+        </div>
 
     </main>
 
     <footer>
-
-        <p>&copy; 2026 Kingsley. All rights reserved.</p>
-
+        <div class="footer-container">
+            <p>&copy; 2026 Kingsley. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="../sitemap.html">Site Map</a>
+                <a href="../contact.html">Get in Touch</a>
+            </div>
+        </div>
     </footer>
 
 </body>
