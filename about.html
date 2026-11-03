@@ -6,137 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>About Me | Kingsley</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-
-        <h1>About Me</h1>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a href="media.html">Media</a>
-            <a href="sitemap.html">Site Map</a>
-        </nav>
-
+        <div class="header-container">
+            <a href="index.html" class="brand">Kingsley<span>.dev</span></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="media.html">Media</a>
+                <a href="sitemap.html">Site Map</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="page-container">
 
-        <section>
-
-            <h2>Who I Am</h2>
-            <br>
-            <img
-            src="images/IMG-20250317-WA0011.jpg"
-            alt="Portrait of Kingsley, a frontend development student"
-        >
-        
-
-            
-
-            <p>
-                My name is Kingsley. I am a frontend development student
-                interested in building websites and interactive web
-                applications.
-            </p>
-
-            <p>
-                I enjoy learning how websites work and developing my skills
-                in HTML, CSS, JavaScript and modern frontend technologies.
-            </p>
-
+        <section class="page-header">
+            <span class="badge">Biography</span>
+            <h1>About Me</h1>
+            <p class="subtitle">Discover my background, interests, and frontend engineering journey.</p>
         </section>
 
-        <article>
+        <section class="card profile-card">
+            <div class="profile-layout">
+                <div class="profile-image-wrapper">
+                    <img
+                        src="images/kingsley pics.jpg"
+                        alt="Portrait of Kingsley, a frontend development student"
+                        class="profile-img"
+                    >
+                </div>
+                <div class="profile-bio">
+                    <h2>Who I Am</h2>
+                    <p>
+                        My name is Kingsley. I am a frontend development student
+                        interested in building websites and interactive web
+                        applications.
+                    </p>
+                    <p>
+                        I enjoy learning how websites work and developing my skills
+                        in HTML, CSS, JavaScript and modern frontend technologies.
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <article class="card">
             <h2>My Learning Journey</h2>
-
             <p>
                 My journey into technology began with an interest in
                 understanding how computers and electronic systems work.
             </p>
-
             <p>
                 I later developed an interest in web development and began
                 learning how HTML, CSS and JavaScript are used to create
                 websites.
             </p>
-
             <p>
                 I am currently focused on improving my frontend development
                 skills by studying concepts and building practical projects.
             </p>
-
         </article>
 
-        <section>
+        <div class="grid-2-col">
+            <section class="card">
+                <h2>My Interests</h2>
+                <ul class="styled-list">
+                    <li>Web development & UI Engineering</li>
+                    <li>Programming & Problem Solving</li>
+                    <li>Emerging Technology & Electronics</li>
+                    <li>Chess Strategy</li>
+                    <li>Music & Aviation</li>
+                </ul>
+            </section>
 
-            <h2>My Interests</h2>
+            <aside class="card">
+                <h2>Quick Facts</h2>
+                <ul class="styled-list">
+                    <li><strong>Role:</strong> Frontend Development Student</li>
+                    <li><strong>Focus:</strong> Interactive web technologies & UI</li>
+                    <li><strong>Drive:</strong> Enjoys continuous learning & skills mastery</li>
+                    <li><strong>Passion:</strong> Crafting responsive & accessible projects</li>
+                </ul>
+            </aside>
+        </div>
 
-            <ul>
-                <li>Web development</li>
-                <li>Programming</li>
-                <li>Technology</li>
-                <li>Chess</li>
-                <li>Music</li>
-            </ul>
-
-        </section>
-
-        <aside>
-
-            <h2>Quick Facts</h2>
-
-            <ul>
-                <li>Frontend Development Student</li>
-                <li>Interested in web technologies</li>
-                <li>Enjoys learning new skills</li>
-                <li>Passionate about building projects</li>
-            </ul>
-
-        </aside>
-
-        <section>
-
+        <section class="card quote-card">
             <h2>My Philosophy</h2>
-
             <blockquote>
-                "The journey of learning never truly ends."
+                &ldquo;The journey of learning never truly ends.&rdquo;
             </blockquote>
-
             <p>
                 I am learning
                 <abbr title="HyperText Markup Language">HTML</abbr>
                 as part of my frontend development studies.
             </p>
-
         </section>
 
-        <section>
-
+        <section class="card">
             <h2>Contact Information</h2>
-
             <address>
-                Email: kingsley@example.com<br>
-                Lagos, Nigeria
+                <strong>Email:</strong> kingsley@example.com<br>
+                <strong>Location:</strong> Lagos, Nigeria
             </address>
-
         </section>
 
     </main>
 
     <footer>
-
-        <p>&copy; 2026 Kingsley. All rights reserved.</p>
-
+        <div class="footer-container">
+            <p>&copy; 2026 Kingsley. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="sitemap.html">Site Map</a>
+                <a href="contact.html">Get in Touch</a>
+            </div>
+        </div>
     </footer>
 
 </body>
 
 </html>
-   

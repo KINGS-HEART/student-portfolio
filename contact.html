@@ -6,147 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact Me | Kingsley</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-
-        <h1>Contact Me</h1>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a href="media.html">Media</a>
-            <a href="sitemap.html">Site Map</a>
-        </nav>
-        
-
+        <div class="header-container">
+            <a href="index.html" class="brand">Kingsley<span>.dev</span></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="media.html">Media</a>
+                <a href="sitemap.html">Site Map</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
+    <main class="page-container">
 
+        <section class="page-header">
+            <span class="badge">Get in Touch</span>
+            <h1>Contact Me</h1>
+            <p class="subtitle">
+                Have a question, collaboration inquiry, or feedback? Fill out the form below or reach out via email.
+            </p>
+        </section>
+
+        <section class="card">
             <h2>Send Me a Message</h2>
-            <label for="email">Email Address:</label>
 
-<input
-    type="email"
-    id="email"
-    name="email"      
-    
-    
->
-<br>
-<br>
-<label for="phone">Phone Number:</label>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
 
-<input
-    type="tel"
-    id="phone"
-    name="phone"
->
-<br>
-<br>
-<fieldset>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+234 ..."
+                    >
+                </div>
 
-    <legend>What is your reason for contacting me?</legend>
+                <fieldset>
+                    <legend>What is your reason for contacting me?</legend>
+                    <div class="options-group">
+                        <label class="option-item" for="job">
+                            <input type="radio" id="job" name="reason" value="job">
+                            Job Opportunity
+                        </label>
 
-    <input
-        type="radio"
-        id="job"
-        name="reason"
-        value="job"
-    >
+                        <label class="option-item" for="project">
+                            <input type="radio" id="project" name="reason" value="project">
+                            Project Collaboration
+                        </label>
 
-    <label for="job">Job Opportunity</label>
+                        <label class="option-item" for="general">
+                            <input type="radio" id="general" name="reason" value="general" checked>
+                            General Enquiry
+                        </label>
+                    </div>
+                </fieldset>
 
-    <input
-        type="radio"
-        id="project"
-        name="reason"
-        value="project"
-    >
+                <fieldset>
+                    <legend>What services interest you?</legend>
+                    <div class="options-group">
+                        <label class="option-item" for="web-development">
+                            <input type="checkbox" id="web-development" name="services" value="web-development">
+                            Web Development
+                        </label>
 
-    <label for="project">Project</label>
+                        <label class="option-item" for="frontend">
+                            <input type="checkbox" id="frontend" name="services" value="frontend">
+                            Frontend Engineering
+                        </label>
 
-    <input
-        type="radio"
-        id="general"
-        name="reason"
-        value="general"
-    >
+                        <label class="option-item" for="consultation">
+                            <input type="checkbox" id="consultation" name="services" value="consultation">
+                            Consultation
+                        </label>
+                    </div>
+                </fieldset>
 
-    <label for="general">General Enquiry</label>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        cols="40"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
 
-</fieldset>
-
-<br>
-
-
-<fieldset>
-
-    <legend>What services interest you?</legend>
-
-    <input
-        type="checkbox"
-        id="web-development"
-        name="services"
-        value="web-development"
-    >
-
-    <label for="web-development">
-        Web Development
-    </label>
-
-    <input
-        type="checkbox"
-        id="frontend"
-        name="services"
-        value="frontend"
-    >
-
-    <label for="frontend">
-        Frontend Development
-    </label>
-
-    <input
-        type="checkbox"
-        id="consultation"
-        name="services"
-        value="consultation"
-    >
-
-    <label for="consultation">
-        Consultation
-    </label>
-
-</fieldset>
-<br>
-<br>
-
-<label for="message">Your Message:</label>
-
-<textarea
-    id="message"
-    name="message"
-    rows="6"
-    cols="40"
-></textarea>
-            <form>
-        
+                <div>
+                    <button type="submit" class="btn btn-primary">Send Message &rarr;</button>
+                </div>
             </form>
-        
+        </section>
+
+        <section class="card">
+            <h2>Direct Information</h2>
+            <address>
+                <strong>Email:</strong> kingsley@example.com<br>
+                <strong>Location:</strong> Lagos, Nigeria
+            </address>
         </section>
 
     </main>
 
     <footer>
-
-        <p>&copy; 2026 Kingsley. All rights reserved.</p>
-
+        <div class="footer-container">
+            <p>&copy; 2026 Kingsley. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="sitemap.html">Site Map</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
     </footer>
 
 </body>
